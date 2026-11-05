@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RentGuard Privacy Policy</title>
+<meta name="description" content="How the RentGuard app handles your data: everything stays on your phone, with no account, no ads and no tracking.">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230FA97A'/%3E%3Cpath fill='%23fff' d='M50 15 85 44h-8v40H23V44h-8z'/%3E%3Ccircle cx='50' cy='62' r='15' fill='%23F5B524'/%3E%3C/svg%3E">
+<style>
+  /* System fonts only: this page loads nothing from third parties. */
+  :root {
+    --bg: #F7FAF9;
+    --surface: #FFFFFF;
+    --fg: #15211D;
+    --muted: #55655F;
+    --line: #DFE8E4;
+    --brand: #0B8F67;
+    --brand-soft: #E5F5EF;
+    --gold: #B87A00;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0D1513;
+      --surface: #14201C;
+      --fg: #E6EEEB;
+      --muted: #9AABA4;
+      --line: #24332E;
+      --brand: #3DD3A0;
+      --brand-soft: #173029;
+      --gold: #F2C14E;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.65 var(--font);
+  }
+  a { color: var(--brand); text-underline-offset: 2px; }
+  a:focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; border-radius: 3px; }
+
+  .top {
+    border-bottom: 1px solid var(--line);
+    background: var(--surface);
+  }
+  .top-inner, main, footer {
+    max-width: 760px;
+    margin: 0 auto;
+    padding-left: max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
+  }
+  .top-inner { display: flex; align-items: center; gap: 12px; padding-block: 16px; }
+  .mark { width: 40px; height: 40px; flex: none; border-radius: 10px; display: block; }
+  .brand { font-weight: 700; font-size: 18px; letter-spacing: -.01em; }
+
+  main { padding-block: 40px 24px; }
+  h1 { font-size: clamp(30px, 6vw, 40px); line-height: 1.15; letter-spacing: -.02em; margin: 0 0 8px; }
+  .meta { color: var(--muted); font-size: 15px; margin: 0 0 28px; }
+  h2 {
+    font-size: 22px; line-height: 1.3; letter-spacing: -.01em;
+    margin: 44px 0 12px; padding-top: 8px; scroll-margin-top: 16px;
+  }
+  h3 { font-size: 17px; margin: 22px 0 6px; }
+  p, ul, table { margin: 0 0 14px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  strong { font-weight: 650; }
+
+  .summary {
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;
+    margin: 0 0 12px; padding: 0; list-style: none;
+  }
+  @media (max-width: 560px) { .summary { grid-template-columns: 1fr; } }
+  .summary li {
+    margin: 0; background: var(--surface); border: 1px solid var(--line);
+    border-radius: 14px; padding: 16px 18px;
+  }
+  .summary b { display: block; font-size: 16px; margin-bottom: 2px; }
+  .summary span { color: var(--muted); font-size: 15px; line-height: 1.5; display: block; }
+
+  nav.toc {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+    padding: 18px 22px; margin: 28px 0 8px;
+  }
+  nav.toc p { font-size: 13px; font-weight: 650; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 8px; }
+  nav.toc ol { margin: 0; padding-left: 22px; columns: 2; column-gap: 28px; font-size: 15px; }
+  @media (max-width: 560px) { nav.toc ol { columns: 1; } }
+  nav.toc li { margin-bottom: 4px; break-inside: avoid; }
+
+  .callout {
+    background: var(--brand-soft); border-radius: 12px; padding: 14px 18px; margin: 0 0 14px;
+  }
+  .table-wrap { overflow-x: auto; margin: 0 0 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; margin: 0; }
+  th, td { text-align: left; vertical-align: top; padding: 11px 14px; border-bottom: 1px solid var(--line); }
+  th { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 650; }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { font-weight: 600; white-space: nowrap; }
+
+  footer {
+    padding-block: 28px 48px; color: var(--muted); font-size: 14px;
+    border-top: 1px solid var(--line); margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#17C08E"/><stop offset="1" stop-color="#077556"/></linearGradient>
+        <linearGradient id="coin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD866"/><stop offset="1" stop-color="#F0A916"/></linearGradient>
+      </defs>
+      <rect width="100" height="100" fill="url(#bg)"/>
+      <path fill="#fff" d="M50 15 85 44h-8v40H23V44h-8z"/>
+      <circle cx="50" cy="62" r="15" fill="url(#coin)"/>
+      <polyline points="43.5,62.5 48.2,67 57,57.5" fill="none" stroke="#0B7A58" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="brand">RentGuard</span>
+  </div>
+</header>
+
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective date: 31 October 2026 · Applies to the RentGuard app on Android and iOS</p>
+
+  <p>RentGuard helps renters document their home, keep records and protect their deposit. This policy explains what information the app handles, where it is kept, and the choices you have. In this policy, "RentGuard", "we" and "us" mean the developer of the RentGuard app.</p>
+
+  <ul class="summary" aria-label="Summary">
+    <li><b>Your records stay on your phone</b><span>Photos, documents, notes and letters are stored on your device. We run no server that receives them.</span></li>
+    <li><b>No account</b><span>You never sign up, and we never ask for your name, email or phone number.</span></li>
+    <li><b>No ads, no tracking</b><span>RentGuard has no advertising and no analytics or tracking tools.</span></li>
+    <li><b>You decide what is shared</b><span>Data leaves your phone only when you share a file or save a backup yourself.</span></li>
+  </ul>
+
+  <nav class="toc" aria-label="Contents">
+    <p>Contents</p>
+    <ol>
+      <li><a href="#on-device">Information stored on your device</a></li>
+      <li><a href="#collect">Information we collect</a></li>
+      <li><a href="#third-parties">Third-party services</a></li>
+      <li><a href="#permissions">App permissions</a></li>
+      <li><a href="#sharing">Sharing you choose</a></li>
+      <li><a href="#security">How your data is protected</a></li>
+      <li><a href="#retention">Retention and deletion</a></li>
+      <li><a href="#rights">Your rights</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="on-device">1. Information stored on your device</h2>
+  <p>To do its job, RentGuard keeps the following on your phone, inside the app's private storage:</p>
+  <ul>
+    <li>Tenancy details you enter, such as the address, landlord or agent name, rent, deposit and key dates.</li>
+    <li>Inspection photos and room-by-room condition notes.</li>
+    <li>Documents you add, such as your lease, receipts or letters.</li>
+    <li>Repair issues, diary entries, deduction claims and letters you create.</li>
+    <li>Reminders and app settings, including your app lock settings.</li>
+  </ul>
+  <p>The database is encrypted. Text recognition (reading text from a photo or document) runs entirely on your device. Reminders are local notifications created on your device.</p>
+  <p><strong>Photo location.</strong> By default, RentGuard removes location (GPS) and other camera metadata from photos before storing them. If you turn on location tagging in the app, the location recorded by your camera is kept with that photo on your device. RentGuard does not request your device location and does not track where you are.</p>
+  <p><strong>Error log.</strong> If something goes wrong, a short technical error message is written to a log stored only on your device. It is never sent automatically.</p>
+
+  <h2 id="collect">2. Information we collect</h2>
+  <div class="callout">We, the developer, do not collect, receive or store any of your personal information or app content on our own servers. We have no copy of your records.</div>
+  <p>We do not sell personal information, we do not share it for advertising, and we do not use it to build profiles. If you email us, we receive your email address and whatever you choose to write, and we use it only to reply to you.</p>
+
+  <h2 id="third-parties">3. Third-party services</h2>
+  <p>RentGuard uses a small number of services from other companies. None of them receive your photos, documents or tenancy records.</p>
+
+  <h3>Google Play and the Apple App Store (purchases)</h3>
+  <p>If you buy RentGuard Premium, payment is handled by Google Play or the Apple App Store. They process your payment details under their own privacy policies. We never see your card or bank details.</p>
+
+  <h3>RevenueCat (purchase management)</h3>
+  <p>We use RevenueCat, Inc. to confirm and restore Premium purchases. When you open the plans screen, buy, restore, or when an existing subscription is checked, the app sends RevenueCat:</p>
+  <ul>
+    <li>a random, anonymous app user ID created by the app (not your name or email);</li>
+    <li>purchase information such as the product, price, currency, purchase date and store receipt;</li>
+    <li>basic technical information such as device type, operating system version, app version, country or store region, and the IP address of the request.</li>
+  </ul>
+  <p>This is used only to unlock Premium, keep it working across reinstalls, and prevent fraud. See the <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat privacy policy</a>.</p>
+
+  <h3>Google ML Kit (on-device text recognition)</h3>
+  <p>RentGuard reads text from photos using Google ML Kit, which runs on your device. Your images and the recognised text are not sent to Google. ML Kit may send Google limited technical information, such as device model, operating system version, app identifier and performance metrics, to keep the feature working. See the <a href="https://developers.google.com/ml-kit/terms" rel="noopener">ML Kit terms</a> and the <a href="https://policies.google.com/privacy" rel="noopener">Google privacy policy</a>.</p>
+
+  <h3>Links to official websites</h3>
+  <p>The app links to official government and legal sources. When you open one, it opens in your browser, and that website's own privacy policy applies.</p>
+
+  <h2 id="permissions">4. App permissions</h2>
+  <p>RentGuard asks only for what its features need. You can change permissions at any time in your phone's settings.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Permission</th><th>Why it is used</th></tr></thead>
+      <tbody>
+        <tr><td>Camera</td><td>To take photos of the property for your inspection records.</td></tr>
+        <tr><td>Photos and files</td><td>To add a photo or document you pick. The app sees only the items you choose.</td></tr>
+        <tr><td>Notifications</td><td>To remind you of rent dates, inspections and legal deadlines.</td></tr>
+        <tr><td>Run at startup</td><td>To restore your scheduled reminders after the phone restarts.</td></tr>
+        <tr><td>Biometrics</td><td>Optional fingerprint or face unlock for the app lock. Your biometric data never leaves your phone's secure hardware, and RentGuard cannot access it.</td></tr>
+        <tr><td>Internet</td><td>Only for purchases and opening links you tap. Your records are never uploaded.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="sharing">5. Sharing you choose</h2>
+  <p>Information leaves your phone only when you act: for example when you share a PDF report or evidence bundle, send a letter by email, or save an encrypted backup to a place you pick. Once you share a file with someone or save it elsewhere, it is handled by that person or service, and we cannot see or control it.</p>
+
+  <h2 id="security">6. How your data is protected</h2>
+  <ul>
+    <li>The app database is encrypted on your device. Photos and documents are kept in private app storage and are not separately encrypted.</li>
+    <li>You can add a PIN and biometric lock, and block screenshots of the app.</li>
+    <li>Backups are encrypted with a passphrase that only you know.</li>
+    <li>RentGuard has no cloud copy. On Android the app's data is excluded from automatic phone backups. On iPhone the app marks its private folder to exclude it from iCloud and computer backups. This does not remove older backups or copies you shared yourself.</li>
+  </ul>
+  <p>Because only you hold your PIN and backup passphrase, we cannot recover your data if you forget them.</p>
+
+  <h2 id="retention">7. Retention and deletion</h2>
+  <p>Your records stay on your device until you delete them. You can:</p>
+  <ul>
+    <li>delete diary entries, reminders and contacts individually (to keep the record credible, saved photos, documents and letters cannot be deleted one at a time);</li>
+    <li>delete everything with <strong>Settings → Delete all data</strong>, which removes the database, photos, documents and cached files;</li>
+    <li>uninstall the app, which removes all of its data from your phone.</li>
+  </ul>
+  <p>Backup files you saved yourself are not removed by the app. Delete them where you stored them.</p>
+  <p>Purchase records held by Google Play, the App Store and RevenueCat are kept as long as needed to provide your Premium access and to meet legal, tax and accounting duties. To ask for deletion of purchase data linked to your anonymous app user ID, email us at the address below.</p>
+
+  <h2 id="rights">8. Your rights</h2>
+  <p>Depending on where you live, you may have the right to access, correct, delete or move your personal data, or to object to its use. Because your records are stored only on your device, you can view, change, export and delete them yourself at any time in the app. For anything held by our service providers, contact us and we will help, or contact the provider directly.</p>
+
+  <h2 id="children">9. Children</h2>
+  <p>RentGuard is made for adults who rent a home. It is not directed at children under 13, and we do not knowingly collect information from children.</p>
+
+  <h2 id="changes">10. Changes to this policy</h2>
+  <p>If we change this policy, we will update this page and the effective date at the top. If a change is significant, we will also tell you in the app.</p>
+
+  <h2 id="contact">11. Contact us</h2>
+  <p>For any question about privacy or this policy, email <a href="mailto:harismughl11122@gmail.com">harismughl11122@gmail.com</a>. We aim to reply within 30 days.</p>
+</main>
+
+<footer>
+  © 2026 RentGuard. RentGuard is a record-keeping tool and does not give legal advice.
+</footer>
+
+</body>
+</html>

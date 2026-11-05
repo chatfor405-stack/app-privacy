@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PayGuard Privacy Policy</title>
+<meta name="description" content="Privacy Policy for PayGuard, an offline-first shift and payslip record keeper for Android.">
+<style>
+  :root {
+    --canvas: #f5f5f7; --surface: #ffffff; --ink: #1d1d1f; --muted: #6e6e73;
+    --border: #e8e8ed; --blue: #0071e3; --blue-soft: #e5f1ff; --green: #1f9d4a;
+    --amber-bg: #fff6e5; --amber: #8a5a00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --canvas: #000000; --surface: #1c1c1e; --ink: #f5f5f7; --muted: #98989d;
+      --border: #2c2c2e; --blue: #0a84ff; --blue-soft: #0d2b4d; --green: #34c759;
+      --amber-bg: #2b2108; --amber: #ffcc66;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--canvas); color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  header {
+    background: linear-gradient(135deg, #34a0ff 0%, #0054d6 100%);
+    color: #fff; text-align: center; padding: 56px 20px 72px;
+  }
+  .logo {
+    width: 84px; height: 84px; margin: 0 auto 18px; border-radius: 22px;
+    background: rgba(255,255,255,.16); display: grid; place-items: center;
+    box-shadow: 0 8px 24px rgba(0,30,100,.25), inset 0 0 0 1px rgba(255,255,255,.3);
+  }
+  .logo svg { width: 64px; height: 64px; }
+  header h1 { margin: 0 0 6px; font-size: clamp(28px, 6vw, 40px); letter-spacing: -.02em; }
+  header p { margin: 0; opacity: .9; }
+  main { max-width: 760px; margin: -40px auto 48px; padding: 0 16px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 20px;
+    padding: 28px clamp(20px, 5vw, 36px); margin-bottom: 16px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.04);
+  }
+  .meta { color: var(--muted); font-size: 14px; margin: 0 0 14px; }
+  .summary { border-left: 4px solid var(--green); }
+  .summary ul { margin: 10px 0 0; padding-left: 20px; }
+  h2 { font-size: 21px; margin: 0 0 10px; letter-spacing: -.01em; }
+  h3 { font-size: 16px; margin: 20px 0 6px; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--blue); }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 8px 0 12px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; }
+  .table-wrap { overflow-x: auto; }
+  .note { background: var(--amber-bg); color: var(--amber); border-radius: 14px; padding: 14px 16px; font-size: 15px; }
+  nav ol { columns: 2; column-gap: 28px; margin: 0; padding-left: 20px; }
+  nav li { break-inside: avoid; }
+  footer { text-align: center; color: var(--muted); font-size: 14px; padding: 0 16px 40px; }
+  @media (max-width: 560px) { nav ol { columns: 1; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo" aria-hidden="true">
+    <svg viewBox="0 0 64 64" fill="none">
+      <rect x="8" y="6" width="38" height="48" rx="6" fill="#fff"/>
+      <circle cx="18" cy="16" r="5" fill="#ffb020"/><circle cx="18" cy="16" r="2.6" stroke="#d68000" stroke-width="1.4"/>
+      <rect x="27" y="12" width="14" height="3" rx="1.5" fill="#0a6cf0"/>
+      <rect x="27" y="17.5" width="9" height="2.2" rx="1.1" fill="#aac4ee"/>
+      <rect x="13" y="27" width="28" height="3" rx="1.5" fill="#b0c8f0"/>
+      <rect x="13" y="33" width="24" height="3" rx="1.5" fill="#b0c8f0"/>
+      <rect x="11" y="40" width="32" height="8" rx="2.5" fill="#ffe2a3"/>
+      <rect x="14" y="43" width="14" height="3" rx="1.5" fill="#d68000"/>
+      <path d="M46 29c4 3 8 4 12 4v9c0 8-5 13-12 15-7-2-12-7-12-15v-9c4 0 8-1 12-4z" fill="#fff"/>
+      <path d="M46 31.5c3.3 2.4 6.5 3.4 9.5 3.6v7.4c0 6.3-4 10.3-9.5 12-5.500-1.700-9.500-5.700-9.500-12v-7.400c3-.2 6.200-1.200 9.500-3.600z" fill="#25a84a"/>
+      <path d="M41 42.500l3.800 3.800 6.700-7.600" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <h1>PayGuard Privacy Policy</h1>
+  <p>Your records stay on your phone.</p>
+</header>
+
+<main>
+  <div class="card summary">
+    <p class="meta">Last updated: 13 October 2026 &middot; Applies to PayGuard for Android, version 1.0.0</p>
+    <h2>The short version</h2>
+    <ul>
+      <li>PayGuard has <strong>no account, no login and no server of its own</strong>.</li>
+      <li>Your shifts, pay figures, payslip photos, notes and cases are stored <strong>only on your device</strong>, encrypted.</li>
+      <li>We <strong>never receive, see or sell</strong> your records, photos or payslips.</li>
+      <li>No ads, no analytics, no crash reporting, no tracking.</li>
+      <li>The only network use is the optional <strong>Premium subscription</strong>, handled by Google Play and RevenueCat.</li>
+      <li>You can erase everything at any time with <strong>Delete all data</strong>.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <nav aria-label="Contents">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#who">Who we are</a></li>
+        <li><a href="#data">Data stored on your device</a></li>
+        <li><a href="#collected">Data we collect</a></li>
+        <li><a href="#never">What PayGuard never asks for</a></li>
+        <li><a href="#security">How your data is protected</a></li>
+        <li><a href="#sharing">Sharing and third parties</a></li>
+        <li><a href="#permissions">Permissions</a></li>
+        <li><a href="#export">Exports and backups</a></li>
+        <li><a href="#retention">Retention and deletion</a></li>
+        <li><a href="#rights">Your rights</a></li>
+        <li><a href="#children">Children</a></li>
+        <li><a href="#changes">Changes to this policy</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+  </div>
+
+  <div class="card" id="who">
+    <h2>1. Who we are</h2>
+    <p>PayGuard (package <code>com.harismughl.payguard</code>) is an offline-first Android app that helps you record shifts, enter payslip figures and compare them. It is published by Haris Mughal (&ldquo;we&rdquo;, &ldquo;us&rdquo;). This policy explains what happens to information when you use the app.</p>
+  </div>
+
+  <div class="card" id="data">
+    <h2>2. Data stored on your device</h2>
+    <p>To work, PayGuard stores the following <strong>on your phone only</strong>. It is created by you and never sent to us:</p>
+    <ul>
+      <li>Jobs, shifts, pay rates and pay terms you enter.</li>
+      <li>Payslip figures you type in, and optional payslip photos with text read from them by on-device OCR.</li>
+      <li>Comparison results, notes, case timelines and evidence you save.</li>
+      <li>Reminders and app settings.</li>
+      <li>An optional name and postal address, only if you type them (used on the PDF you choose to create).</li>
+      <li>Your trial start date and Premium status, so the app can unlock features.</li>
+    </ul>
+    <p>Because we have no server, we cannot access, recover or restore this data for you.</p>
+  </div>
+
+  <div class="card" id="collected">
+    <h2>3. Data we collect</h2>
+    <p>PayGuard itself does not collect personal data. The single exception is the optional <strong>Premium subscription</strong>, which uses <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a> together with Google Play Billing. For that purpose only, the following leaves your device:</p>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Data</th><th>Purpose</th></tr></thead>
+      <tbody>
+        <tr><td>An anonymous app user ID generated by RevenueCat</td><td>To recognise your subscription</td></tr>
+        <tr><td>Purchase and entitlement status, product purchased, purchase token / receipt</td><td>To verify and unlock Premium, and to restore it on a new device</td></tr>
+        <tr><td>Basic device and app information (e.g. app version, OS version, country/currency from the store)</td><td>Subscription processing and fraud prevention</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>This traffic is encrypted (HTTPS). <strong>Your shifts, pay data, payslips and photos are never part of it.</strong> Payment details are handled entirely by Google Play; we never see your card number.</p>
+    <p>The 14-day free trial runs on your device and needs no card or account.</p>
+  </div>
+
+  <div class="card" id="never">
+    <h2>4. What PayGuard never asks for</h2>
+    <p>Location, contacts, email address, phone number, bank details, tax ID, social security or national insurance numbers, microphone, SMS or call history. There is no advertising ID, no analytics SDK and no crash-upload service.</p>
+  </div>
+
+  <div class="card" id="security">
+    <h2>5. How your data is protected</h2>
+    <ul>
+      <li>The database is encrypted (SQLite3 Multiple Ciphers, AES). Payslip photos are encrypted with AES-256-GCM.</li>
+      <li>Keys are random and are held in the Android Keystore.</li>
+      <li>Android cloud backup and device-to-device transfer are <strong>disabled</strong> for the app, so the system does not copy your records elsewhere.</li>
+      <li>Optional app lock (fingerprint, face or screen lock) hides PayGuard in recent apps and blocks screenshots. It is a privacy screen on your phone, not an account.</li>
+      <li>Text recognition runs on-device using a bundled model; payslip images are not uploaded.</li>
+    </ul>
+    <p>Encryption protects data at rest. It cannot protect against a phone that is already compromised.</p>
+  </div>
+
+  <div class="card" id="sharing">
+    <h2>6. Sharing and third parties</h2>
+    <p>We do not sell, rent or share your records with anyone. The only third-party services involved are:</p>
+    <ul>
+      <li><strong>Google Play / Google Play Billing</strong> &mdash; processes payments and subscriptions (<a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>).</li>
+      <li><strong>Apple App Store / StoreKit</strong> &mdash; processes iOS payments and subscriptions (<a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Privacy Policy</a>).</li>
+      <li><strong>RevenueCat</strong> &mdash; subscription management (<a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat Privacy Policy</a>).</li>
+      <li><strong>Google ML Kit text recognition</strong> &mdash; bundled in the app and run entirely on your device for reading payslips.</li>
+    </ul>
+    <p>We may disclose information only if required by law, which is unlikely since we hold none of your records.</p>
+  </div>
+
+  <div class="card" id="permissions">
+    <h2>7. Permissions</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Permission</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td>Notifications</td><td>Local reminders you set. The text is generic and nothing is sent from a server.</td></tr>
+        <tr><td>Run at startup</td><td>Re-schedules your local reminders after the phone restarts.</td></tr>
+        <tr><td>Biometrics</td><td>Optional app lock.</td></tr>
+        <tr><td>Internet / network state / billing</td><td>Added by the subscription library, used only for Premium (section 3).</td></tr>
+        <tr><td>Vibrate</td><td>Notification vibration.</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>PayGuard declares no camera or storage permission. Photos are taken with the system camera, or picked with the system picker, only when you choose to.</p>
+  </div>
+
+  <div class="card" id="export">
+    <h2>8. Exports and backups</h2>
+    <p>You can create an encrypted backup file or a PDF personal record. These are created only when you ask, and go only where <em>you</em> send them through the Android file or share dialogs. Backups are protected by a password you choose; <strong>it cannot be recovered</strong> if you forget it. Once a file leaves the app, its handling is up to you and the app you share it with.</p>
+  </div>
+
+  <div class="card" id="retention">
+    <h2>9. Retention and deletion</h2>
+    <p>Data stays on your phone until you remove it. <strong>Settings &rarr; Data &amp; security &rarr; Delete all data</strong> immediately erases the database, encrypted files, reminders and encryption keys. Uninstalling the app, or clearing its storage, also removes it. Backups or PDFs you saved elsewhere are not touched, so delete those yourself.</p>
+    <div class="note"><strong>Important:</strong> deleted or lost data cannot be recovered by us. Make a backup if you want to keep it.</div>
+    <p style="margin-top:12px">Subscription records held by Apple, Google and RevenueCat are kept under their own policies. To ask RevenueCat to delete data tied to your anonymous ID, contact us (section 13).</p>
+  </div>
+
+  <div class="card" id="rights">
+    <h2>10. Your rights</h2>
+    <p>Depending on where you live (for example under the GDPR, UK GDPR or CCPA), you may have rights to access, correct, delete or port your personal data, or to object to its processing. Because your records exist only on your device, you already have full control: view, edit, export and delete them inside the app. For the limited subscription data, contact us and we will help with your request.</p>
+  </div>
+
+  <div class="card" id="children">
+    <h2>11. Children</h2>
+    <p>PayGuard is not directed to children under 13 (or the minimum age in your country), and we do not knowingly collect data from them.</p>
+  </div>
+
+  <div class="card" id="changes">
+    <h2>12. Changes to this policy</h2>
+    <p>If we change how PayGuard handles data, we will update this page and the &ldquo;Last updated&rdquo; date, and the in-app privacy text. Material changes will be highlighted in the app update notes.</p>
+  </div>
+
+  <div class="card" id="contact">
+    <h2>13. Contact</h2>
+    <p>Questions or requests about privacy: <a href="mailto:harismughl11122@gmail.com">harismughl11122@gmail.com</a></p>
+  </div>
+
+  <div class="card">
+    <div class="note"><strong>Disclaimer:</strong> PayGuard is an educational record-keeping and estimation tool. It is not legal, tax or financial advice, and it cannot promise any money can be recovered. Verify figures and current rules with the relevant official authority or a qualified adviser.</div>
+  </div>
+</main>
+
+<footer>&copy; 2026 PayGuard &middot; Haris Mughal</footer>
+</body>
+</html>
